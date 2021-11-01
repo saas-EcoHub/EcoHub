@@ -1,0 +1,2008 @@
+Started GET "/" for 2603:7000:9503:d903:dd8d:e982:aee7:2081 at 2021-11-01 18:20:10 +0000
+Cannot render console from 2603:7000:9503:d903:dd8d:e982:aee7:2081! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (9.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for PromotionsController):
+  
+actionpack (6.0.4.1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.4.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.4.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:21:15 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 184.9ms | Allocations: 71459)
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 0.0ms | Allocations: 72718)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_promotion_path' for #<#<Class:0x00007f9039655510>:0x00007f903965e110>):
+    1: <h1 class="title">EcoHub Index</h1>
+    2: 
+    3: <%= link_to 'Add a new promotion', new_promotion_path, :class => 'btn btn-primary' %>
+  
+app/views/promotions/index.html.erb:3
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:24:05 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.4.1) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.4.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.4.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (66.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (61.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePromotions (20211101182244)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "promotions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "keyword" varchar, "source" varchar, "kind" varchar, "expdate" datetime, "info" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211101182244"]]
+  [1m[35m (70.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-11-01 18:24:25.517098"], ["updated_at", "2021-11-01 18:24:25.517098"]]
+  [1m[35m (63.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:24:28 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.8ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" ORDER BY create_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered promotions/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3703)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.8ms | Allocations: 5316)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_promotion_path' for #<#<Class:0x000055e334de6ee0>:0x000055e334ecf7a8>):
+    1: <h1 class="title">EcoHub Index</h1>
+    2: 
+    3: <%= link_to 'Add a new promotion', new_promotion_path, :class => 'btn btn-primary' %>
+  
+app/views/promotions/index.html.erb:3
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /usr/local/bin/rake:23)
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:26:42 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.6ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" ORDER BY create_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered promotions/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3553)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms | Allocations: 4464)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_promotion_path' for #<#<Class:0x00007f9038982090>:0x00007f903899fb90>):
+    1: <h1 class="title">EcoHub Index</h1>
+    2: 
+    3: <%= link_to 'Add a new promotion', new_promotion_path, :class => 'btn btn-primary' %>
+  
+app/views/promotions/index.html.erb:3
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:27:05 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (4.6ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" ORDER BY create_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered promotions/index.html.erb within layouts/application (Duration: 31.0ms | Allocations: 4134)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 4.6ms | Allocations: 6388)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_promotion_path' for #<#<Class:0x000055d0209bd660>:0x000055d0208a9c38>):
+    1: <h1 class="title">EcoHub Index</h1>
+    2: 
+    3: <%= link_to 'Add a new promotion', new_promotion_path, :class => 'btn btn-primary' %>
+  
+app/views/promotions/index.html.erb:3
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:28:32 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 80)
+[Webpacker] Compiling...
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:28:40 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/codio/workspace/ecohub/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: bdff1afdfbe7c189d484
+Version: webpack 4.46.0
+Time: 2933ms
+Built at: 11/01/2021 6:28:41 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a860ea931ce4c057e219.js    124 KiB  application  [emitted] [immutable]  application
+js/application-a860ea931ce4c057e219.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a860ea931ce4c057e219.js js/application-a860ea931ce4c057e219.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 9181ms (Views: 9180.0ms | ActiveRecord: 0.0ms | Allocations: 1326775)
+
+
+[Webpacker] Compiled all packs in /home/codio/workspace/ecohub/public/packs
+[Webpacker] Hash: bdff1afdfbe7c189d484
+Version: webpack 4.46.0
+Time: 864ms
+Built at: 11/01/2021 6:28:43 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a860ea931ce4c057e219.js    124 KiB  application  [emitted] [immutable]  application
+js/application-a860ea931ce4c057e219.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a860ea931ce4c057e219.js js/application-a860ea931ce4c057e219.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 2511ms (Views: 2508.0ms | ActiveRecord: 0.0ms | Allocations: 7783)
+
+
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:29:35 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.5ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" ORDER BY create_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered promotions/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3695)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms | Allocations: 4967)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_promotion_path' for #<#<Class:0x00007f83ed145f28>:0x00007f83ed14d2f0>):
+    1: <h1 class="title">EcoHub Index</h1>
+    2: 
+    3: <%= link_to 'Add a new promotion', new_promotion_path, :class => 'btn btn-primary' %>
+  
+app/views/promotions/index.html.erb:3
+Started GET "/new" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:31:58 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:32:12 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 6095)
+
+
+Started GET "/promotions/new" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:32:13 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#new as HTML
+  Rendering promotions/new.html.erb within layouts/application
+  Rendered promotions/new.html.erb within layouts/application (Duration: 65.6ms | Allocations: 6028)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 72.2ms | ActiveRecord: 0.8ms | Allocations: 17107)
+
+
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:32:28 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"hcl9nIyqb94lWjmqFoHIi+mssw2R1jTc5V13XeUr5ZzHprbxs6vQiFFWg4v9HTTZUTYR8cbG0/zABq8EwfRkMA==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"6"}, "commit"=>"Save Changes"}
+[31mUnpermitted parameter: :kind[0m
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 714)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:32:28 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 11ms (ActiveRecord: 0.0ms | Allocations: 921)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:18:in `show'
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:33:25 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 661)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:18:in `show'
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:33:30 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1115)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2364)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/promotions/new" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:35:28 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#new as HTML
+  Rendering promotions/new.html.erb within layouts/application
+  Rendered promotions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 7280)
+
+
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:37:48 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"dCs8d0xQXECS05x7KBezL8Hx0pEF12xJ8eqga23tILR0iIA0A/IIyOTx7ttuEL4jhd23ajAZMN7s3w49/zoMmQ==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"3"}, "commit"=>"Save Changes"}
+[31mUnpermitted parameter: :kind[0m
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 634)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:37:48 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 641)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:18:in `show'
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:39:12 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"dCs8d0xQXECS05x7KBezL8Hx0pEF12xJ8eqga23tILR0iIA0A/IIyOTx7ttuEL4jhd23ajAZMN7s3w49/zoMmQ==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"3"}, "commit"=>"Save Changes"}
+[31mUnpermitted parameter: :kind[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:11:in `create'
+  [1m[36mPromotion Create (67.7ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["expdate", "2021-11-03 00:00:00"], ["created_at", "2021-11-01 18:39:12.432357"], ["updated_at", "2021-11-01 18:39:12.432357"]]
+  ↳ app/controllers/promotions_controller.rb:11:in `create'
+  [1m[35m (83.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:11:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 170ms (ActiveRecord: 151.8ms | Allocations: 9987)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:39:12 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 670)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:18:in `show'
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:40:04 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"dCs8d0xQXECS05x7KBezL8Hx0pEF12xJ8eqga23tILR0iIA0A/IIyOTx7ttuEL4jhd23ajAZMN7s3w49/zoMmQ==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"3"}, "commit"=>"Save Changes"}
+[31mUnpermitted parameter: :kind[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+  [1m[36mPromotion Create (0.3ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["expdate", "2021-11-03 00:00:00"], ["created_at", "2021-11-01 18:40:04.743022"], ["updated_at", "2021-11-01 18:40:04.743022"]]
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+  [1m[35m (77.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 96ms (ActiveRecord: 78.4ms | Allocations: 9908)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:40:04 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 667)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:17:in `show'
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:41:08 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms | Allocations: 1830)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:18:in `show'
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:41:51 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 864)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1523)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:41:56 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 863)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1378)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/promotions/new" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:43:19 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#new as HTML
+  Rendering promotions/new.html.erb within layouts/application
+  Rendered promotions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1603)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 6744)
+
+
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:43:21 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Xbfd409DalRElyI3zaPaZdysyoZNOm9qU6nrWl8KOy1dFGGgAOE+3DK1UJeLpNdpmICvfXj0M/1OnEUMzd0XAA==", "promotion"=>{"keyword"=>"", "source"=>"", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"1"}, "commit"=>"Save Changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+  [1m[36mPromotion Create (0.4ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", ""], ["source", ""], ["kind", "New User Only"], ["expdate", "2021-11-01 00:00:00"], ["created_at", "2021-11-01 18:43:21.106742"], ["updated_at", "2021-11-01 18:43:21.106742"]]
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+  [1m[35m (88.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 108ms (ActiveRecord: 90.7ms | Allocations: 9796)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:43:21 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 657)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:18:in `show'
+Started GET "/promotions/new" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:45:01 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#new as HTML
+  Rendering promotions/new.html.erb within layouts/application
+  Rendered promotions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1907)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 7825)
+
+
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:45:07 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"w/3NtKOYzGlcItxtMy2dOOD2LvLNkVfYEv2OopOr3tnDXnH37DqY4SoArs11KpA0pNpLCfhfC08PyCD0AXzy9A==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"5"}, "commit"=>"Create Promotion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+  [1m[36mPromotion Create (0.3ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["kind", "New User Only"], ["expdate", "2021-11-05 00:00:00"], ["created_at", "2021-11-01 18:45:07.319609"], ["updated_at", "2021-11-01 18:45:07.319609"]]
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+  [1m[35m (74.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 80ms (ActiveRecord: 74.4ms | Allocations: 3855)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:45:07 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 663)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:18:in `show'
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:50:41 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"w/3NtKOYzGlcItxtMy2dOOD2LvLNkVfYEv2OopOr3tnDXnH37DqY4SoArs11KpA0pNpLCfhfC08PyCD0AXzy9A==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"6"}, "commit"=>"Create Promotion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+  [1m[36mPromotion Create (0.3ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["kind", "New User Only"], ["expdate", "2021-11-06 00:00:00"], ["created_at", "2021-11-01 18:50:41.942281"], ["updated_at", "2021-11-01 18:50:41.942281"]]
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+  [1m[35m (74.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 75.8ms | Allocations: 106750)
+
+
+  
+NoMethodError (undefined method `promotion_url' for #<PromotionsController:0x00007f83ed362658>):
+  
+app/controllers/promotions_controller.rb:14:in `create'
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:51:46 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"w/3NtKOYzGlcItxtMy2dOOD2LvLNkVfYEv2OopOr3tnDXnH37DqY4SoArs11KpA0pNpLCfhfC08PyCD0AXzy9A==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"6"}, "commit"=>"Create Promotion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+  [1m[36mPromotion Create (0.3ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["kind", "New User Only"], ["expdate", "2021-11-06 00:00:00"], ["created_at", "2021-11-01 18:51:46.793698"], ["updated_at", "2021-11-01 18:51:46.793698"]]
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+  [1m[35m (81.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 96ms (ActiveRecord: 81.8ms | Allocations: 10020)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:51:46 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 671)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:22:in `show'
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:51:50 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"w/3NtKOYzGlcItxtMy2dOOD2LvLNkVfYEv2OopOr3tnDXnH37DqY4SoArs11KpA0pNpLCfhfC08PyCD0AXzy9A==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"6"}, "commit"=>"Create Promotion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+  [1m[36mPromotion Create (1.0ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["kind", "New User Only"], ["expdate", "2021-11-06 00:00:00"], ["created_at", "2021-11-01 18:51:50.724907"], ["updated_at", "2021-11-01 18:51:50.724907"]]
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+  [1m[35m (64.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 77ms (ActiveRecord: 65.9ms | Allocations: 3817)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:51:50 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 659)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:22:in `show'
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:53:36 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 4ms (ActiveRecord: 0.7ms | Allocations: 1826)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:23:in `show'
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:53:38 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"w/3NtKOYzGlcItxtMy2dOOD2LvLNkVfYEv2OopOr3tnDXnH37DqY4SoArs11KpA0pNpLCfhfC08PyCD0AXzy9A==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"6"}, "commit"=>"Create Promotion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+  [1m[36mPromotion Create (1.8ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["kind", "New User Only"], ["expdate", "2021-11-06 00:00:00"], ["created_at", "2021-11-01 18:53:38.522727"], ["updated_at", "2021-11-01 18:53:38.522727"]]
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+  [1m[35m (70.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 86ms (ActiveRecord: 72.6ms | Allocations: 8588)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:53:38 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 666)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion without an ID):
+  
+app/controllers/promotions_controller.rb:23:in `show'
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /usr/local/bin/rake:23)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /usr/local/bin/rake:23)
+Started GET "/promotions/new" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:58:55 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#new as HTML
+  Rendering promotions/new.html.erb within layouts/application
+  Rendered promotions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1947)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 14.3ms | ActiveRecord: 0.7ms | Allocations: 13747)
+
+
+Started GET "/" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:58:57 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1113)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1780)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/promotions/new" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:58:59 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#new as HTML
+  Rendering promotions/new.html.erb within layouts/application
+  Rendered promotions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1633)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 6670)
+
+
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:59:04 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"h/HJg8ISdAe1+/9uqjcfZTJTer/PlQMYTHPh1q0w3WOHUnXAjbAgj8PZjc7sMBJpdn8fRPpbX49RRk+AP+fxTg==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"1"}, "commit"=>"Create Promotion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+  [1m[36mPromotion Create (0.5ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["kind", "New User Only"], ["expdate", "2021-11-01 00:00:00"], ["created_at", "2021-11-01 18:59:04.183403"], ["updated_at", "2021-11-01 18:59:04.183403"]]
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+  [1m[35m (67.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:13:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 83ms (ActiveRecord: 68.4ms | Allocations: 3908)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 18:59:04 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 863)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1378)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:00:44 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1104)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2362)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:02:28 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1544)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 3905)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:02:41 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 159)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 803ms (Views: 801.3ms | ActiveRecord: 0.0ms | Allocations: 1312171)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:04:31 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1096)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2733)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/promotions/new" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:04:37 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#new as HTML
+  Rendering promotions/new.html.erb within layouts/application
+  Rendered promotions/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 3720)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 9074)
+
+
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:04:44 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"PUnGBAEyDQznKpZe1xR6pp7IA4c17C0eN0EavJv0gdQ96npHTpBZhJEI5P6RE3eq2uRmfAAicYkqdLTqCSOt+Q==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"4"}, "commit"=>"Create Promotion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+  [1m[36mPromotion Create (6.6ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["kind", "New User Only"], ["expdate", "2021-11-04 00:00:00"], ["created_at", "2021-11-01 19:04:44.772923"], ["updated_at", "2021-11-01 19:04:44.772923"]]
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+  [1m[35m (70.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 77.6ms | Allocations: 58615)
+
+
+  
+NoMethodError (undefined method `redirct_to' for #<PromotionsController:0x00007f8d1cdce1e0>):
+  
+app/controllers/promotions_controller.rb:11:in `create'
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:05:01 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"PUnGBAEyDQznKpZe1xR6pp7IA4c17C0eN0EavJv0gdQ96npHTpBZhJEI5P6RE3eq2uRmfAAicYkqdLTqCSOt+Q==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"4"}, "commit"=>"Create Promotion"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+  [1m[36mPromotion Create (0.3ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["kind", "New User Only"], ["expdate", "2021-11-04 00:00:00"], ["created_at", "2021-11-01 19:05:01.406393"], ["updated_at", "2021-11-01 19:05:01.406393"]]
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+  [1m[35m (71.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:10:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 83ms (ActiveRecord: 72.3ms | Allocations: 10090)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:05:01 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 863)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1529)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/promotions/1" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:10:25 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPromotion Load (0.3ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:16:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 400)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 10087)
+
+
+Started GET "/promotions/1" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:10:33 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:16:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 5729)
+
+
+Started GET "/promotions/1" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:10:35 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:16:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.1ms | Allocations: 5736)
+
+
+Started GET "/promotions/1" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:10:36 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:16:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 5751)
+
+
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:13:48 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"PUnGBAEyDQznKpZe1xR6pp7IA4c17C0eN0EavJv0gdQ96npHTpBZhJEI5P6RE3eq2uRmfAAicYkqdLTqCSOt+Q==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"4"}, "commit"=>"Create Promotion"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:12:in `create'
+  [1m[36mPromotion Create (0.3ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["kind", "New User Only"], ["expdate", "2021-11-04 00:00:00"], ["created_at", "2021-11-01 19:13:48.972087"], ["updated_at", "2021-11-01 19:13:48.972087"]]
+  ↳ app/controllers/promotions_controller.rb:12:in `create'
+  [1m[35m (70.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:12:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions/12
+Completed 302 Found in 84ms (ActiveRecord: 71.0ms | Allocations: 10143)
+
+
+Started GET "/promotions/12" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:13:49 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPromotion Load (0.3ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 6035)
+
+
+Started POST "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:13:51 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#create as HTML
+  Parameters: {"authenticity_token"=>"PUnGBAEyDQznKpZe1xR6pp7IA4c17C0eN0EavJv0gdQ96npHTpBZhJEI5P6RE3eq2uRmfAAicYkqdLTqCSOt+Q==", "promotion"=>{"keyword"=>"Free Ship First Order", "source"=>"Weee!", "kind"=>"New User Only", "expdate(1i)"=>"2021", "expdate(2i)"=>"11", "expdate(3i)"=>"4"}, "commit"=>"Create Promotion"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:12:in `create'
+  [1m[36mPromotion Create (0.4ms)[0m  [1m[32mINSERT INTO "promotions" ("keyword", "source", "kind", "expdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["keyword", "Free Ship First Order"], ["source", "Weee!"], ["kind", "New User Only"], ["expdate", "2021-11-04 00:00:00"], ["created_at", "2021-11-01 19:13:51.463661"], ["updated_at", "2021-11-01 19:13:51.463661"]]
+  ↳ app/controllers/promotions_controller.rb:12:in `create'
+  [1m[35m (68.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:12:in `create'
+Redirected to https://poetic-human-3000.codio.io/promotions/13
+Completed 302 Found in 75ms (ActiveRecord: 69.0ms | Allocations: 3880)
+
+
+Started GET "/promotions/13" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:13:51 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 5737)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:13:53 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 863)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1378)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/promotions/1" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:13:57 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 5738)
+
+
+Started GET "/promotions/2" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:14:01 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 5742)
+
+
+Started DELETE "/promotions/2" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:14:06 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for PromotionsController):
+  
+actionpack (6.0.4.1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.4.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.4.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:14:50 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/home/codio/workspace/ecohub/app/controllers/promotions_controller.rb:31: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/promotions_controller.rb:31: syntax error, unexpected end-of-input, expecting end
+app/controllers/promotions_controller.rb:31: syntax error, unexpected end-of-input, expecting end
+app/controllers/promotions_controller.rb:31: syntax error, unexpected end-of-input, expecting end
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:15:07 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  Rendered promotions/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 863)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1854)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     </tr>
+    11:   </thead>
+    12:   <tbody>
+    13:     <% @promotions.each do |promotion| %>
+    14:       <tr>
+    15:         <td>
+    16:           <%= promotion.keyword %>
+  
+app/views/promotions/index.html.erb:13
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:15:27 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.3ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 7427)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.9ms | Allocations: 13383)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:17:54 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1796)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 7752)
+
+
+Started GET "/promotions/1" for 2603:7000:9503:d903:20cd:364:3aad:61d4 at 2021-11-01 19:17:58 +0000
+Cannot render console from 2603:7000:9503:d903:20cd:364:3aad:61d4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 378)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 6204)
+
+
+Started GET "/promotions/1" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:21:21 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 9.1ms | ActiveRecord: 0.9ms | Allocations: 11922)
+
+
+Started DELETE "/promotions/1" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:21:25 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4J6Q1PvR0imO7VDnXauxu5JvW1DNcIxWG+fB1Ud9OB3gPSyXtHOGofjPIkcbrLy31kM+q/i+0MEG0m+D1aoUMA==", "id"=>"1"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+No template found for PromotionsController#destroy, rendering head :no_content
+Completed 204 No Content in 5ms (ActiveRecord: 0.2ms | Allocations: 2244)
+
+
+Started GET "/promotions/1" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:17 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 7.1ms | ActiveRecord: 0.9ms | Allocations: 11892)
+
+
+Started DELETE "/promotions/1" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:20 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"90xpT/ylob1U+GZGzZLNhNlAiQxf67xY6lbhq58XfC3379UMswf1NSLaFOaLlcCInWzs92ol4M/3Y0/9DcBQAA==", "id"=>"1"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (76.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 82ms (ActiveRecord: 77.1ms | Allocations: 3786)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:20 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1508)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 6532)
+
+
+Started GET "/promotions/2" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:23 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 5746)
+
+
+Started DELETE "/promotions/2" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:25 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nh/T+JnOuCPkjZ4PtLBnJhHHWtdKiYCackrnscq87hGevG+71mzsq5Kv7K/yt2oqVes/LH9H3A1vf0nnWGvCPA==", "id"=>"2"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (65.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 71ms (ActiveRecord: 65.7ms | Allocations: 3791)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:25 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1415)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 6441)
+
+
+Started GET "/promotions/3" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:27 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 5739)
+
+
+Started DELETE "/promotions/3" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:28 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7moSJNYroC90Q8EJwQ35qRp1wj+MArnAPu+PbkjtH1Puya5nmYn0pwJhs6mHCvSlXlmnxLnM5Vcj2iE42jozfg==", "id"=>"3"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (72.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 78ms (ActiveRecord: 72.7ms | Allocations: 3764)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:29 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1345)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 6372)
+
+
+Started GET "/promotions/4" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:30 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 5723)
+
+
+Started DELETE "/promotions/4" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:31 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XaHNEd/J48u/Y5n1CYKAvU1GojOcwnDOyOpu0yr44KtdAnFSkGu3Q8lB61VPhY2xCWrHyKkMLFnV38CFuC/Mhg==", "id"=>"4"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (68.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 74ms (ActiveRecord: 69.3ms | Allocations: 3772)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:31 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1275)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 6307)
+
+
+Started GET "/promotions/5" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:32 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 5747)
+
+
+Started DELETE "/promotions/5" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:34 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nmaAyF1FsEOVhn+pFdN6yz7gBFuRYEcpJlyjMX8KP16exTyLEufky+OkDQlT1HfHesxhoKSuG747aQ1n7d0Tcw==", "id"=>"5"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (69.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 75ms (ActiveRecord: 69.7ms | Allocations: 3766)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:34 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1205)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 6235)
+
+
+Started GET "/promotions/6" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:35 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 5717)
+
+
+Started DELETE "/promotions/6" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:37 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"14m2XwIdjY4gjf6O5rd1DRLFdx7ozrFNdEKCgHoFXJnXKgocTb/ZBlavjC6gsHgBVukS5d0A7dppdyzW6NJwtA==", "id"=>"6"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (72.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 79ms (ActiveRecord: 72.6ms | Allocations: 3770)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:37 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.2ms | Allocations: 6172)
+
+
+Started GET "/promotions/7" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:38 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 5730)
+
+
+Started DELETE "/promotions/7" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:40 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HnmC3eNEh9oa0nXzJ9/VkxnoXDaQqi5ovYVdAnglGMUe2j6erObTUmzwB1Nh2NifXcQ5zaVkcv+gsPNU6vI06A==", "id"=>"7"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (91.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 99ms (ActiveRecord: 91.6ms | Allocations: 3145)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:40 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1065)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 6109)
+
+
+Started GET "/promotions/8" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:42 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 5731)
+
+
+Started DELETE "/promotions/8" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:43 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"I6JhjLdP18A/dVhPF2Fon5nNKKhACWZOopUodSw3Ol8jAd3P+O2DSElXKu9RZmWT3eFNU3XHOtm/oIYjvuAWcg==", "id"=>"8"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.4ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (70.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 78ms (ActiveRecord: 70.5ms | Allocations: 3776)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:43 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 995)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 6033)
+
+
+Started GET "/promotions/9" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:47 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 5725)
+
+
+Started DELETE "/promotions/9" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:49 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gfmhWKcHKvVO+yINhhGLXkgo9wKG5mYZJsP0tx4yk2OBWh0b6KV+fTjZUK3AFoZSDASS+bMoOo479lrhjOW/Tg==", "id"=>"9"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (62.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 67ms (ActiveRecord: 63.2ms | Allocations: 3770)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:49 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 925)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 5955)
+
+
+Started GET "/promotions/10" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:49 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 5727)
+
+
+Started DELETE "/promotions/10" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:51 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"omLltv5h2eDsEREUbQB7Gt1NWabk2WRwLvzImQC+dFCiwVn1scONaJozY7QrB3YWmWE8XdEXOOczyWbPkmlYfQ==", "id"=>"10"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (66.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 71ms (ActiveRecord: 66.6ms | Allocations: 3771)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:51 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 854)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 5890)
+
+
+Started GET "/promotions/11" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:52 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 5733)
+
+
+Started DELETE "/promotions/11" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:54 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GAaYIhp4oioSqOHTm8hY+uaFFtk0oIZWAa7iF1KU9ugYpSRhVdr2omSKk3Pdz1X2oqlzIgFu2sEcm0xBwEPaxQ==", "id"=>"11"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (67.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 74ms (ActiveRecord: 68.2ms | Allocations: 3780)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:54 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 784)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 5822)
+
+
+Started GET "/promotions/12" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:55 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 5745)
+
+
+Started DELETE "/promotions/12" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:57 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bUzvQ+vFovkCcI9JUZcfe+y8D+23G5C2aKWIhKDJU6Rt71MApGf2cXRS/ekXkBJ3qJBqFoLVzCF1kCbSMh5/iQ==", "id"=>"12"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:25:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[36mPromotion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "promotions" WHERE "promotions"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+  [1m[35m (72.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/promotions_controller.rb:26:in `destroy'
+Redirected to https://poetic-human-3000.codio.io/promotions
+Completed 302 Found in 78ms (ActiveRecord: 72.5ms | Allocations: 3783)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:22:57 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 714)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 5744)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:23:13 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 6907)
+
+
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:23:16 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 376)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 6092)
+
+
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:23:18 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 5736)
+
+
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:23:19 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 5721)
+
+
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:23:28 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 5733)
+
+
+Started GET "/promotions/13/edit" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:24:53 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for PromotionsController):
+  
+actionpack (6.0.4.1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.4.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.4.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.4.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.4.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.4.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:24:54 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 0.2ms | Allocations: 5733)
+
+
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:26:45 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 352)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 6851)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:26:46 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 6139)
+
+
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:26:48 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 128)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 5717)
+
+
+Started GET "/promotions/13/edit" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:26:50 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  Rendering promotions/edit.html.erb within layouts/application
+  Rendered promotions/edit.html.erb within layouts/application (Duration: 0.2ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 5210)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:28:16 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 6902)
+
+
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:28:17 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 352)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 6054)
+
+
+Started GET "/promotions/13/edit" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:28:18 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  Rendering promotions/edit.html.erb within layouts/application
+  Rendered promotions/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1226)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1850)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"promotions", :id=>nil}, missing required keys: [:id]):
+    1: <h1 class="title">Edit Existing Promotion<h1></h1>
+    2: <%= form_tag promotion_path(@promotion), :class => 'form' do %>
+    3:   <%= label :promotion, :keyword, 'Keyword', :class => 'col-form-label' %>
+    4:   <%= text_field :promotion, :keyword, :class => 'form-control' %>
+    5:   <%= label :promotion, :source, 'Source', :class => 'col-form-label' %>
+  
+app/views/promotions/edit.html.erb:2
+Started GET "/promotions/13/edit" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:28:53 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  Rendering promotions/edit.html.erb within layouts/application
+  Rendered promotions/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1222)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2439)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"promotions", :id=>nil}, missing required keys: [:id]):
+    1: <h1 class="title">Edit Existing Promotion<h1></h1>
+    2: <%= form_tag promotion_path(@promotion), :method => :put do %>
+    3:   <%= label :promotion, :keyword, 'Keyword', :class => 'col-form-label' %>
+    4:   <%= text_field :promotion, :keyword, :class => 'form-control' %>
+    5:   <%= label :promotion, :source, 'Source', :class => 'col-form-label' %>
+  
+app/views/promotions/edit.html.erb:2
+Started GET "/promotions/12" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:28:59 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1162)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Promotion with 'id'=12):
+  
+app/controllers/promotions_controller.rb:21:in `show'
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:29:03 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 6311)
+
+
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:29:04 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 352)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 6075)
+
+
+Started GET "/promotions/13/edit" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:29:07 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  Rendering promotions/edit.html.erb within layouts/application
+  Rendered promotions/edit.html.erb within layouts/application (Duration: 0.6ms | Allocations: 920)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1419)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"promotions", :id=>nil}, missing required keys: [:id]):
+    1: <h1 class="title">Edit Existing Promotion<h1></h1>
+    2: <%= form_tag promotion_path(@promotion), :method => :put do %>
+    3:   <%= label :promotion, :keyword, 'Keyword', :class => 'col-form-label' %>
+    4:   <%= text_field :promotion, :keyword, :class => 'form-control' %>
+    5:   <%= label :promotion, :source, 'Source', :class => 'col-form-label' %>
+  
+app/views/promotions/edit.html.erb:2
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:29:49 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 7.1ms | ActiveRecord: 1.0ms | Allocations: 11898)
+
+
+Started GET "/promotions/13/edit" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:29:51 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:32:in `edit'
+  Rendering promotions/edit.html.erb within layouts/application
+  Rendered promotions/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1665)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 7255)
+
+
+Started GET "/promotions" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:30:00 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#index as HTML
+  Rendering promotions/index.html.erb within layouts/application
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions"[0m
+  ↳ app/views/promotions/index.html.erb:13
+  Rendered promotions/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 738)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.2ms | Allocations: 5783)
+
+
+Started GET "/promotions/13" for 2603:7000:9503:d903:c20:31f0:b632:5a7e at 2021-11-01 19:30:02 +0000
+Cannot render console from 2603:7000:9503:d903:c20:31f0:b632:5a7e! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PromotionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPromotion Load (0.1ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/promotions_controller.rb:21:in `show'
+  Rendering promotions/show.html.erb within layouts/application
+  Rendered promotions/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 5719)
+
+

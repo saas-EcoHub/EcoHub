@@ -1,0 +1,15 @@
+<h1 class="title">Edit Existing Promotion<h1></h1>
+<%= form_tag promotion_path(@promotion), :method => :put do %>
+  <%= label :promotion, :keyword, 'Keyword', :class => 'col-form-label' %>
+  <%= text_field :promotion, :keyword, :class => 'form-control' %>
+  <%= label :promotion, :source, 'Source', :class => 'col-form-label' %>
+  <%= text_field :promotion, :source, :class => 'form-control' %>
+  <%= label :promotion, :kind, 'Kind', :class => 'col-form-label'  %>
+  <%= select :promotion, :kind, ['New User Only','Refer Code','Common','Other'], {}, {:class => 'form-control col-1'} %>
+  <br/>
+  <%= label :promotion, :expdate, 'Expiration Date', :class => 'col-form-label'  %>
+  <%= date_select :promotion, :expdate, {}, :class => 'form-control col-2 d-inline' %>
+  <br/>
+  <%= submit_tag 'Update Promotion', :class => 'btn btn-primary' %>
+  <%= link_to 'Cancel', promotions_path, :class => 'btn btn-secondary' %>
+<% end %>
