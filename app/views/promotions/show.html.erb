@@ -5,20 +5,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <% end %>
 <div class="container">
-  <h2>Details about <em><%= @promotion.keyword %></em></h2>
-
   <div class="d-flex flex-row align-items-center text-left comment-top p-2 bg-white border-bottom px-4">
     <div class="profile-image"><img class="rounded-circle" src="https://i.imgur.com/TQiTZuv.png" width="70" height="70"></div>
     <div class="d-flex flex-column-reverse flex-grow-0 align-items-center votings ml-1"><i class="fa fa-sort-up fa-2x hit-voting"></i><span>127</span><i class="fa fa-sort-down fa-2x hit-voting"></i></div>
     <div class="d-flex flex-column ml-3">
       <div class="d-flex flex-row post-title">
-        <h5>$45 off for order over $50</h5><span class="ml-2">(Anonymous)</span>
+        <h5><%= @promotion.keyword %></h5><span class="ml-2">(Anonymous)</span>
       </div>
-      <div class="d-flex flex-row align-items-center align-content-center post-title"><span class="bdge mr-1">New User Only</span><span class="mr-2 comments">13 comments&nbsp;</span><span class="mr-2 dot"></span><span>10/15/2021</span></div>
+      <div class="d-flex flex-row align-items-center align-content-center post-title"><span class="bdge mr-1">New User Only</span><span class="mr-2 comments">13 comments&nbsp;</span><span class="mr-2 dot"></span><span>Last edited at <%= @promotion.updated_at %></span></div>
     </div>
   </div>
 
-  <h2 class="mt-5 mb-5">Details about <em>$35 off for order over $45</em></h2>
+  <h2 class="mt-5 mb-5">Details about <em><%= @promotion.keyword %></em></h2>
 
   <ul id="details">
     <li>
