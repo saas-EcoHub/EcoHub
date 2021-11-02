@@ -1,27 +1,95 @@
-<h2>Details about <em><%= @promotion.keyword %></em></h2>
+<% content_for :head do %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="app/assets/stylesheets/comments.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<% end %>
+<div class="container">
+  <h2>Details about <em><%= @promotion.keyword %></em></h2>
 
-<ul id="details">
-  <li>
-    Key Word:
-    <%= @promotion.keyword %>
-  </li>
-  <li>
-    Source:
-    <%= @promotion.source %>
-  </li>
-  <li>
-    Kind:
-    <%= @promotion.kind %>
-  </li>
-</ul>
+  <div class="d-flex flex-row align-items-center text-left comment-top p-2 bg-white border-bottom px-4">
+    <div class="profile-image"><img class="rounded-circle" src="https://i.imgur.com/TQiTZuv.png" width="70" height="70"></div>
+    <div class="d-flex flex-column-reverse flex-grow-0 align-items-center votings ml-1"><i class="fa fa-sort-up fa-2x hit-voting"></i><span>127</span><i class="fa fa-sort-down fa-2x hit-voting"></i></div>
+    <div class="d-flex flex-column ml-3">
+      <div class="d-flex flex-row post-title">
+        <h5>$45 off for order over $50</h5><span class="ml-2">(Anonymous)</span>
+      </div>
+      <div class="d-flex flex-row align-items-center align-content-center post-title"><span class="bdge mr-1">New User Only</span><span class="mr-2 comments">13 comments&nbsp;</span><span class="mr-2 dot"></span><span>10/15/2021</span></div>
+    </div>
+  </div>
 
-<h3>Description:</h3>
-<p id="info">
-  <%= @promotion.info %>
-</p>
+  <h2 class="mt-5 mb-5">Details about <em>$35 off for order over $45</em></h2>
 
-<div class="row">
-  <%= link_to 'Edit', edit_promotion_path(@promotion), :class => 'btn btn-primary col-2' %>
-  <%= link_to 'Delete', promotion_path(@promotion), 'data-method' => 'delete', 'data-confirm' => 'Are you sure?', :class => 'btn btn-danger col-2' %>
-  <%= link_to 'Back to promotion list', promotions_path, :class => 'btn btn-primary col-2' %>
+  <ul id="details">
+    <li>
+      Tag:
+      New User Only
+    </li>
+    <li>
+      Expiration Date:
+      <%= @promotion.expdate%>
+    </li>
+    <li>
+      Released on:
+      <%= @promotion.created_at%>
+    </li>
+    <li>
+      Author:
+      Anonymous
+    </li>
+  </ul>
+
+  <h3>Description:</h3>
+  <p id="info">
+    <%=  @promotion.info%>
+  </p>
+
+  <div class="container mt-5 mb-5">
+    <div class="d-flex justify-content-center row">
+      <div class="d-flex flex-column col-md-8">
+        <div class="coment-bottom bg-white p-2 px-4">
+          <div class="d-flex flex-row add-comment-section mt-4 mb-4"><img class="img-fluid img-responsive rounded-circle mr-2" src="https://i.imgur.com/GOshzC1.jpeg" width="38"><input type="text" class="form-control mr-3" placeholder="Add comment"><button class="btn btn-success" type="button">Comment</button></div>
+          <div class="commented-section mt-2">
+            <div class="d-flex flex-row align-items-center commented-user">
+              <h5 class="mr-2">User 1</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">4 hours ago</span>
+            </div>
+            <div class="comment-text-sm"><span>Cool!!!!!</span></div>
+            <div class="reply-section">
+              <div class="d-flex flex-row align-items-center voting-icons"><i class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">10</span><span class="dot ml-2"></span>
+                <h6 class="ml-2 mt-1">Reply</h6>
+              </div>
+            </div>
+          </div>
+          <div class="commented-section mt-2">
+            <div class="d-flex flex-row align-items-center commented-user">
+              <h5 class="mr-2">User 2</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">5 hours ago</span>
+            </div>
+            <div class="comment-text-sm"><span>Freaking Awesome!!</span></div>
+            <div class="reply-section">
+              <div class="d-flex flex-row align-items-center voting-icons"><i class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">15</span><span class="dot ml-2"></span>
+                <h6 class="ml-2 mt-1">Reply</h6>
+              </div>
+            </div>
+          </div>
+          <div class="commented-section mt-2">
+            <div class="d-flex flex-row align-items-center commented-user">
+              <h5 class="mr-2">User 3</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">10 hours ago</span>
+            </div>
+            <div class="comment-text-sm"><span>Thanks to this, I saved a lot ngl.</span></div>
+            <div class="reply-section">
+              <div class="d-flex flex-row align-items-center voting-icons"><i class="fa fa-sort-up fa-2x mt-3 hit-voting"></i><i class="fa fa-sort-down fa-2x mb-3 hit-voting"></i><span class="ml-2">25</span><span class="dot ml-2"></span>
+                <h6 class="ml-2 mt-1">Reply</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <%= link_to 'Edit', edit_promotion_path(@promotion), :class => 'btn btn-primary col-2' %>
+    <%= link_to 'Delete', promotion_path(@promotion), 'data-method' => 'delete', 'data-confirm' => 'Are you sure?', :class => 'btn btn-danger col-2' %>
+    <%= link_to 'Back to promotion list', promotions_path, :class => 'btn btn-primary col-2' %>
+  </div>
 </div>

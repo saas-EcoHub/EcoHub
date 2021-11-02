@@ -1,6 +1,6 @@
 class PromotionsController < ApplicationController
     def index
-        @promotion =Promotion.all
+        @promotion = Promotion.all
     end
     
     def new
@@ -31,7 +31,7 @@ class PromotionsController < ApplicationController
         @promotion = Promotion.find params[:id]
         @promotion.update_attributes!(promotion_params)
         redirect_to promotion_path(@promotion)
-  end
+    end
         
     private
     def promotion_params
