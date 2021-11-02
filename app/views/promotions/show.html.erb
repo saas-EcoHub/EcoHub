@@ -9,6 +9,10 @@
     Source:
     <%= @promotion.source %>
   </li>
+  <li>
+    Kind:
+    <%= @promotion.kind %>
+  </li>
 </ul>
 
 <h3>Description:</h3>
@@ -18,6 +22,6 @@
 
 <div class="row">
   <%= link_to 'Edit', edit_promotion_path(@promotion), :class => 'btn btn-primary col-2' %>
-  <%= link_to 'Delete this promotion', promotion_path(@promotion), 'data-method' => 'delete', 'data-confirm' => 'Are you sure?', :class => 'btn btn-danger col-2' %>
+  <%= link_to 'Delete', promotion_path(@promotion), 'data-method' => 'delete', 'data-confirm' => 'Are you sure?', :class => 'btn btn-danger col-2' %>
   <%= link_to 'Back to promotion list', promotions_path, :class => 'btn btn-primary col-2' %>
 </div>

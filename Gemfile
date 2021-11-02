@@ -50,5 +50,12 @@ group :test do
   gem 'webdrivers'
 end
 
+group :test do
+  gem 'cucumber-rails', require: false
+  gem 'rspec-rails'
+  # database_cleaner is not mandatory, but highly recommended
+  gem 'database_cleaner'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

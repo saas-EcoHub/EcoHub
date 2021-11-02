@@ -8,12 +8,8 @@ class PromotionsController < ApplicationController
     end
     
     def create
-        @promotion = Promotion.new(promotion_params)
-        if @promotion.save
-            redirect_to @promotion
-        else
-            render 'new'
-        end
+        @promotion = Promotion.create!(promotion_params)
+        redirect_to promotions_path
     end
     
     def show
@@ -24,13 +20,18 @@ class PromotionsController < ApplicationController
     def destroy
         @promotion = Promotion.find(params[:id])
         @promotion.destroy
-        flash[:notice] = "Promotion deleted"
         redirect_to promotions_path
     end
     
     def edit
         @promotion = Promotion.find(params[:id])
     end
+    
+    def update
+        @promotion = Promotion.find params[:id]
+        @promotion.update_attributes!(promotion_params)
+        redirect_to promotion_path(@promotion)
+  end
         
     private
     def promotion_params
