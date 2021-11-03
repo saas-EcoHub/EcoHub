@@ -1,27 +1,24 @@
 class PromotionsController < ApplicationController
   def index
     @all_categories = Promotion.all_categories
-    all_categories_map = Hash[@all_categories.map { |o| [o, '1'] }]
-    session[:categories] = all_categories_map unless session.key?(:categories)
-    session[:sort_by] = '' unless session.key?(:sort_by)
-    session[:categories] = if params.key?(:categories)
-                             params[:categories]
-                           else
-                             'Refresh'.eql?(params[:commit]) ? all_categories_map : session[:categories]
-                           end
-    session[:sort_by] = params.key?(:sort_by) ? params[:sort_by] : session[:sort_by]
-    unless params.key?(:categories) && params.key?(:sort_by)
-      redirect_to promotions_path(categories: session[:categories], sort_by: session[:sort_by]) and return
+    @categories_to_show = params[:categories] || session[:categories] || {}
+    @categories_to_show = Hash[@all_categories.map { |o| [o, '1'] }] if @categories_to_show == {}
+    sorting = params[:sort_by] || session[:sort_by] || ''
+    @exp_header = 'exp'.eql?(sorting) ? 'hilite bg-warning' : ''
+
+    if (params[:sort_by] != session[:sort_by]) || (params[:categories] != session[:categories])
+      session[:sort_by] = sorting
+      session[:categories] = @categories_to_show
+      redirect_to promotions_path(categories: @categories_to_show, sort_by: sorting) and return
     end
 
-    @categories_to_show = params[:categories].keys
-    @promotion = Promotion.with_category(@categories_to_show)
-    @promotion = if ''.eql?(params[:sort_by])
-                   @promotion.order(upvotes: :desc)
+    keys = @categories_to_show.keys
+    keys.map { |a| Promotion.categories[a] }
+    @promotion = if sorting == ''
+                   Promotion.where(category: keys).order(upvotes: :desc)
                  else
-                   @promotion.order(expdate: :desc)
+                   Promotion.where(category: keys).order(expdate: :desc)
                  end
-    @exp_header = 'exp'.eql?(params[:sort_by]) ? 'hilite bg-warning' : ''
   end
 
   def new
