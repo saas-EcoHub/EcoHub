@@ -4,11 +4,14 @@
   <%= text_field :promotion, :keyword, :class => 'form-control' %>
   <%= label :promotion, :source, 'Source', :class => 'col-form-label' %>
   <%= text_field :promotion, :source, :class => 'form-control' %>
-  <%= label :promotion, :kind, 'Kind', :class => 'col-form-label'  %>
-  <%= select :promotion, :kind, ['New User Only','Refer Code','Common','Other'], {}, {:class => 'form-control col-1'} %>
+  <%= label :promotion, :category, 'Category', :class => 'col-form-label'  %>
+  <%= select :promotion, :category, ['New User Only','Refer Code','Common','Other'], {}, {:class => 'form-control col-2'} %>
   <br/>
   <%= label :promotion, :expdate, 'Expiration Date', :class => 'col-form-label'  %>
   <%= date_select :promotion, :expdate, {}, :class => 'form-control col-2 d-inline' %>
+  <br/>
+  <%= label :promotion, :info, 'Info', class: 'col-form-label' %>
+  <%= text_field :promotion, :info, class: 'form-control' %>
   <br/>
   <%= submit_tag 'Create Promotion', :class => 'btn btn-primary' %>
   <%= link_to 'Cancel', promotions_path, :class => 'btn btn-secondary' %>
