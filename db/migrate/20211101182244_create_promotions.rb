@@ -3,11 +3,12 @@ class CreatePromotions < ActiveRecord::Migration[6.0]
     create_table :promotions do |t|
       t.string :keyword
       t.string :source
-      t.string :kind
-      t.datetime :expdate
+      t.date :expdate
       t.text :info
-
-      t.timestamps
+      t.integer :upvotes, default: 0
+      t.integer :category, default: 0
+      t.datetime :created_at, default: -> { 'CURRENT_TIMESTAMP' }
+      t.datetime :updated_at, default: -> { 'CURRENT_TIMESTAMP' }
     end
   end
 end

@@ -15,11 +15,12 @@ ActiveRecord::Schema.define(version: 2021_11_01_182244) do
   create_table "promotions", force: :cascade do |t|
     t.string "keyword"
     t.string "source"
-    t.string "kind"
-    t.datetime "expdate"
+    t.date "expdate"
     t.text "info"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.integer "upvotes", default: 0
+    t.integer "category", default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
