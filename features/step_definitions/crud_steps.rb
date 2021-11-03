@@ -7,6 +7,10 @@ Given /^the following promotions exist:$/ do |promotions_table|
     end
 end
 
+Given /^(?:|I )am on (.+)$/ do |page_name|
+    visit path_to(page_name)
+end
+
 Then /^I should see all the promotions$/ do
     Promotion.all.each do |promotion|
         step %{I should see "#{promotion.keyword}"}
@@ -39,24 +43,28 @@ When /^(?:|I )select "([^"]*)" from "([^"]*)"$/ do |value, field|
 end
 
 Then /^(?:|I )should see "([^"]*)"$/ do |text|
-  if page.respond_to? :should
-    page.should have_content(text)
-  else
-    assert page.has_content?(text)
-  end
+    if page.respond_to? :should
+        page.should have_content(text)
+    else
+        assert page.has_content?(text)
+    end
 end
 
 
 Then /^(?:|I )should see \/([^\/]*)\/$/ do |regexp|
-  regexp = Regexp.new(regexp)
+    regexp = Regexp.new(regexp)
 
-  if page.respond_to? :should
-    page.should have_xpath('//*', :text => regexp)
-  else
-    assert page.has_xpath?('//*', :text => regexp)
-  end
+    if page.respond_to? :should
+        page.should have_xpath('//*', :text => regexp)
+    else
+        assert page.has_xpath?('//*', :text => regexp)
+    end
 end
 
-Given /^(?:|I )am on (.+)$/ do |page_name|
-  visit path_to(page_name)
+Then /^(?:|I )should not see "([^"]*)"$/ do |text|
+    if page.respond_to? :should
+        page.should have_no_content(text)
+    else
+        assert page.has_no_content?(text)
+    end
 end

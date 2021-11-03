@@ -7,7 +7,7 @@ Feature: CRUD operations for promotions
 Background: promotions in database
 
   Given the following promotions exist:
-  | keyword          | source     | kind          | expdate    |
+  | keyword          | source     | category      | expdate    |
   | $100 for free    | HundsonBay | Common        | 2022-05-25 |
   | 10% off over $50 | Weee!      | Refer Code    | 2021-11-25 |
   | $20 off over $25 | Gorillas   | New User Only | 2021-12-22 |
@@ -23,7 +23,7 @@ Scenario: Add new valid promotion
     Then I should be on the "Create New Promotion" page
     And I fill in "Keyword" with "10% off for first order"
     And I fill in "Source" with "Best Buy"
-    And I select "Refer Code" from "Kind"
+    And I select "Refer Code" from "Category"
     And I select "2021" from "promotion_expdate_1i"
     And I select "November" from "promotion_expdate_2i"
     And I select "13" from "promotion_expdate_3i"
@@ -36,7 +36,7 @@ Scenario: Add new valid promotion
 Scenario: Edit an existing promotion
     Given I am on the details page for "$100 for free"
     When I follow "Edit"
-    And I select "Refer Code" from "Kind"
+    And I select "Refer Code" from "Category"
     And I press "Update Promotion"
     Then I should be on the details page for "$100 for free"
     And I should see "Refer Code"
