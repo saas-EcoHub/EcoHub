@@ -3,11 +3,11 @@
 <%= form_tag sign_in_path, :class => 'form' do %>
 <div class="mb-3">
   <%= label :user, :email, 'Email', :class => 'col-form-label' %>
-  <%= text_field :user, :email, :class => 'form-control', placeholder: "example@mail.com"%>
+  <%= text_field :user, :email, :class => 'form-control'%>
 </div>
 <div class="mb-3">
   <%= label :user, :password, 'Password', :class => 'col-form-label'%>
-  <%= password_field  :user, :password, :class => 'form-control', placeholder: "password" %>
+  <%= password_field  :user, :password, :class => 'form-control'%>
 </div>
 
 <div class="mb-3">
