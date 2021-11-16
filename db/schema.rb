@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_01_182244) do
+ActiveRecord::Schema.define(version: 2021_11_15_185416) do
 
   create_table "promotions", force: :cascade do |t|
     t.string "keyword"
@@ -21,6 +21,14 @@ ActiveRecord::Schema.define(version: 2021_11_01_182244) do
     t.integer "category", default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "nickname", null: false
+    t.string "email", null: false
+    t.string "password_digest"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end

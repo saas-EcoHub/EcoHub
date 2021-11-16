@@ -15,6 +15,13 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-success text-white mb-3">
       <h1 class="title">EcoHub!</h1>
+      <% if Current.user %>
+        Hi,  <%= Current.user.nickname %>
+      <%= button_to "Logout", logout_path, method: :delete %>
+      <% else%>
+        <%= link_to "Login", sign_in_path %>
+        <%= link_to "Sign Up", sign_up_path %>
+      <% end %>
     </nav>
     <%= yield %>
   </body>
