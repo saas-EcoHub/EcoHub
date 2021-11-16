@@ -22,7 +22,9 @@ class PromotionsController < ApplicationController
   end
 
   def new
-    redirect_to sign_in_path if Current.user.nil?
+    redirect_to sign_in_path if session[:user_id].nil?
+
+    set_current_user
     @promotion = Promotion.new
   end
 
@@ -55,16 +57,18 @@ class PromotionsController < ApplicationController
   end
 
   def upvote
-    redirect_to sign_in_path and return if Current.user.nil?
+    redirect_to sign_in_path and return if session[:user_id].nil?
 
+    set_current_user
     @promotion = Promotion.find(params[:id])
     @promotion.vote_by voter: Current.user, vote: 'like'
     redirect_back fallback_location: root_path
   end
 
   def downvote
-    redirect_to sign_in_path and return if Current.user.nil?
+    redirect_to sign_in_path and return if session[:user_id].nil?
 
+    set_current_user
     @promotion = Promotion.find(params[:id])
     @promotion.vote_by voter: Current.user, vote: 'bad'
     redirect_back fallback_location: root_path
