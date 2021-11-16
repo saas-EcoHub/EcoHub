@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :BuyK, class: 'Promotion' do
     keyword '$45 off for order over $45'
     source 'BuyK'

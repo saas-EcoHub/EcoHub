@@ -3,7 +3,7 @@ require 'rails_helper'
 
 describe PromotionsController do
   describe 'GET index' do
-    let!(:promotion) { FactoryGirl.create(:BuyK) }
+    let!(:promotion) { FactoryBot.create(:BuyK) }
     # all_categories_map = Hash[Promotion.all_categories.map { |o| [o, '1'] }]
     it 'should render the index template' do
       get :index
@@ -33,18 +33,18 @@ describe PromotionsController do
   describe 'POST #create' do
     it 'should create a new promo' do
       expect do
-        post :create, params: { promotion: FactoryGirl.attributes_for(:BuyK) }
+        post :create, params: { promotion: FactoryBot.attributes_for(:BuyK) }
       end.to change { Promotion.count }.by(1)
     end
 
     it 'should redirect to the movie index page' do
-      post :create, params: { promotion: FactoryGirl.attributes_for(:BuyK) }
+      post :create, params: { promotion: FactoryBot.attributes_for(:BuyK) }
       expect(response).to redirect_to(promotions_url)
     end
   end
 
   describe 'GET #show' do
-    let!(:promotion) { Promotion.create(FactoryGirl.attributes_for(:BuyK)) }
+    let!(:promotion) { Promotion.create(FactoryBot.attributes_for(:BuyK)) }
     before(:each) do
       get :show, params: { id: promotion.id }
     end
@@ -59,7 +59,7 @@ describe PromotionsController do
   end
 
   describe 'GET #edit' do
-    let!(:promotion) { Promotion.create(FactoryGirl.attributes_for(:BuyK)) }
+    let!(:promotion) { Promotion.create(FactoryBot.attributes_for(:BuyK)) }
     before(:each) do
       get :edit, params: { id: promotion.id }
     end
@@ -74,9 +74,9 @@ describe PromotionsController do
   end
 
   describe 'PUT #update' do
-    let!(:promotion) { Promotion.create(FactoryGirl.attributes_for(:BuyK)) }
+    let!(:promotion) { Promotion.create(FactoryBot.attributes_for(:BuyK)) }
     before(:each) do
-      put :update, params: { id: promotion.id, promotion: FactoryGirl.attributes_for(:BuyK, info: 'Modified') }
+      put :update, params: { id: promotion.id, promotion: FactoryBot.attributes_for(:BuyK, info: 'Modified') }
     end
 
     it 'should update an existing promo' do
@@ -90,7 +90,7 @@ describe PromotionsController do
   end
 
   describe 'DELETE #destroy' do
-    let!(:promotion) { Promotion.create(FactoryGirl.attributes_for(:BuyK)) }
+    let!(:promotion) { Promotion.create(FactoryBot.attributes_for(:BuyK)) }
 
     it 'should destroy a promo' do
       expect do
