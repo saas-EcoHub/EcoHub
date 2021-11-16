@@ -15,19 +15,20 @@ class PromotionsController < ApplicationController
     keys = @categories_to_show.keys
     keys.map { |a| Promotion.categories[a] }
     @promotion = if sorting == ''
-                   Promotion.where(category: keys).order(upvotes: :desc)
+                   Promotion.where(category: keys).order(cached_weighted_score: :desc)
                  else
                    Promotion.where(category: keys).order(expdate: :desc)
                  end
   end
 
   def new
+    redirect_to sign_in_path if Current.user.nil?
     @promotion = Promotion.new
   end
 
   def create
     promotion_params['category'] = Promotion.categories[promotion_params['category']]
-    @promotion = Promotion.create!(promotion_params)
+    @promotion = Current.user.promotions.create!(promotion_params)
     redirect_to promotions_path
   end
 
@@ -51,6 +52,28 @@ class PromotionsController < ApplicationController
     promotion_params['category'] = Promotion.categories[promotion_params['category']]
     @promotion.update_attributes!(promotion_params)
     redirect_to promotion_path(@promotion)
+  end
+
+  def upvote
+    redirect_to sign_in_path and return if Current.user.nil?
+
+    @promotion = Promotion.find(params[:id])
+    @promotion.vote_by voter: Current.user, vote: 'like'
+    redirect_back fallback_location: root_path
+  end
+
+  def downvote
+    redirect_to sign_in_path and return if Current.user.nil?
+
+    @promotion = Promotion.find(params[:id])
+    @promotion.vote_by voter: Current.user, vote: 'bad'
+    redirect_back fallback_location: root_path
+  end
+
+  def unvote
+    @promotion = Promotion.find(params[:id])
+    Current.user.unvote_for @promotion
+    redirect_back fallback_location: root_path
   end
 
   private

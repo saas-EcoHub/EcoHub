@@ -32,5 +32,11 @@ body {
 }
 
 .hit-voting {
-    cursor: pointer
+    cursor: pointer;
+    color: #0c0c0c;
+}
+
+.hit-voting-done {
+    cursor: pointer;
+    color: green;
 }
