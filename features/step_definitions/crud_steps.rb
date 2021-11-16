@@ -2,8 +2,17 @@ require 'uri'
 require 'cgi'
 
 Given /^the following promotions exist:$/ do |promotions_table|
-    promotions_table.hashes.each do |promotion|
-        Promotion.create! promotion
+    datas = promotions_table.hashes
+    datas.each do |data|
+        step %{I follow "Add a new promotion"}
+        step %{I fill in "Keyword" with "#{data['keyword']}"}
+        step %{I fill in "Source" with "#{data['source']}"}
+        step %{I select "#{data['category']}" from "Category"}
+        dates = data['expdate'].split("-")
+        step %{I select "#{dates[0]}" from "promotion_expdate_1i"}
+        step %{I select "#{dates[1]}" from "promotion_expdate_2i"}
+        step %{I select "#{dates[2]}" from "promotion_expdate_3i"}
+        step %{I press "Create Promotion"}
     end
 end
 

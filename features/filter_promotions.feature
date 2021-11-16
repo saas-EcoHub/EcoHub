@@ -5,13 +5,19 @@ Feature: filter operations for promotions
   I want to only see the category that I'm interested on
   
 Background: promotions in database
+  Given the following users exist:
+  | nickname | email             | password  |
+  | Vicky    | viccky99@mail.com | fakeword  |
+  | Sarah    | IamSa223@col.edu  | 892ndlwhf |
 
-  Given the following promotions exist:
-  | keyword          | source     | category      | expdate    |
-  | $100 for free    | HundsonBay | Common        | 2022-05-25 |
-  | 10% off over $50 | Weee!      | Refer Code    | 2021-11-25 |
-  | $20 off over $25 | Gorillas   | New User Only | 2021-12-22 |
-  | $30 off over $45 | Buyk       | New User Only | 2022-01-11 |
+  Given I am on the EcoHub homepage
+  And I am logged in as "IamSa223@col.edu" with password "892ndlwhf"
+  And the following promotions exist:
+  | keyword          | source     | category      | expdate          |
+  | $100 for free    | HundsonBay | Common        | 2022-May-25      |
+  | 10% off over $50 | Weee!      | Refer Code    | 2021-November-25 |
+  | $20 off over $25 | Gorillas   | New User Only | 2021-December-22 |
+  | $30 off over $45 | Buyk       | New User Only | 2022-January-11  |
   
 Scenario: restrict to promotions with 'New User Only'
     Given I am on the EcoHub homepage
