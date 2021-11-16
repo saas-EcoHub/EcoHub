@@ -1,0 +1,34 @@
+<h1>Sign up</h1>
+
+<%= form_tag sign_up_path, :class => 'form' do %>
+  <% if @user.errors.any? %>
+  <div class="alert alert-danger">
+  <% @user.errors.full_messages.each do |message| %>
+    <div>
+      <%= message %>
+    </div>
+  <% end%>
+  </div>
+  <% end %>
+
+<div class="mb-3">
+  <%= label :user, :nickname, 'User Name', :class => 'col-form-label' %>
+  <%= text_field :user, :nickname, :class => 'form-control', placeholder: "nickname" %>
+</div>
+<div class="mb-3">
+  <%= label :user, :email, 'Email', :class => 'col-form-label' %>
+  <%= text_field :user, :email, :class => 'form-control', placeholder: "example@mail.com"%>
+</div>
+<div class="mb-3">
+  <%= label :user, :password, 'Password', :class => 'col-form-label'%>
+  <%= password_field  :user, :password, :class => 'form-control', placeholder: "password" %>
+</div>
+<div class="mb-3">
+  <%= label :user, :password_confirmation, 'Confirm Your Password', :class => 'col-form-label' %>
+  <%= password_field  :user, :password_confirmation, :class => 'form-control', placeholder: "password"%>
+</div>
+
+<div class="mb-3">
+  <%= submit_tag 'Sign Up', :class => 'btn btn-primary' %>
+</div>
+<% end %>
