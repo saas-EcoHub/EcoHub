@@ -17,11 +17,13 @@ EcoHub is a promotion and refer code sharing website to provide Columbia student
 
 - Tag: `iter1`
 - Branch: `iter-1`
-- Heroku: https://ecos-hub.herokuapp.com
+- Heroku: https://ecos-hub-1.herokuapp.com
 
 ### Iteration 2
 
-- ToDo
+- Tag: `iter2`
+- Branch: `iter-2`
+- Heroku: https://ecos-hub-2.herokuapp.com
 
 ### Launch
 
