@@ -16,7 +16,7 @@
           <i class="fa fa-sort-up fa-2x hit-voting"></i>
           <% end %>
       <% end %>
-      <span><%= @promotion.weighted_score %></span>
+      <span class="vote_count"><%= @promotion.weighted_score %></span>
       <% if !Current.user.nil? and Current.user.voted_down_on? @promotion %>
           <%= link_to unvote_promotion_path(@promotion), method: :put do %>
           <i class="fa fa-sort-down fa-2x hit-voting-done"></i>
