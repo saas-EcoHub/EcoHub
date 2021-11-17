@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_15_225143) do
+ActiveRecord::Schema.define(version: 2021_11_17_190021) do
 
   create_table "promotions", force: :cascade do |t|
     t.string "keyword"
@@ -18,16 +18,9 @@ ActiveRecord::Schema.define(version: 2021_11_15_225143) do
     t.date "expdate"
     t.text "info"
     t.integer "category", default: 0
-    t.integer "user_id"
-    t.integer "cached_votes_total", default: 0
-    t.integer "cached_votes_score", default: 0
-    t.integer "cached_votes_up", default: 0
-    t.integer "cached_votes_down", default: 0
-    t.integer "cached_weighted_score", default: 0
-    t.integer "cached_weighted_total", default: 0
-    t.float "cached_weighted_average", default: 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer "user_id"
     t.index ["user_id"], name: "index_promotions_on_user_id"
   end
 
