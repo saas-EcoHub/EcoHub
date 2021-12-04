@@ -1,0 +1,9 @@
+<%= form_with(model: [@promotion, @comment]) do |comment| %>
+  <%= comment.hidden_field :parent_id %>
+  <div class="d-flex flex-row add-comment-section mt-4 mb-4">
+    <img class="img-fluid img-responsive rounded-circle mr-2" src="https://i.imgur.com/GOshzC1.jpeg" width="38">
+    <%= comment.text_field :content, class: 'form-control mr-3'%>
+    <%= comment.submit 'Reply', class: 'btn btn-success'%>
+    <%= link_to 'Cancel', promotion_path(@promotion), class: 'btn btn-warning' %>
+  </div>
+<% end %>

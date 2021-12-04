@@ -1,0 +1,3 @@
+<% if !comment.id.nil? and comment.id != comment.parent.id %>
+  <%= render partial: 'comments/template', locals: {comment: comment} %>
+<% end %>

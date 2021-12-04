@@ -1,6 +1,7 @@
 class Promotion < ApplicationRecord
   acts_as_votable
   belongs_to :user
+  has_many :comments, dependent: :destroy
 
   enum category: { 'New User Only': 0, 'Refer Code': 1, Common: 2, Other: 3 }
 

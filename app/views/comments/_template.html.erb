@@ -1,0 +1,43 @@
+<div class="card ml-5">
+  <div class="card-body">
+    <div class="commented-section mt-2">
+      <div class="d-flex flex-row align-items-center commented-user">
+        <h5 class="mr-2"><%=comment.user.nickname %></h5><span class="dot mb-1"></span><span class="mb-1 ml-2"><%=comment.updated_at %></span>
+      </div>
+      <div class="comment-text-sm"><span><%=comment.content %></span></div>
+      <div class="reply-section">
+        <div class="d-flex flex-row align-items-center voting-icons">
+          <% if !Current.user.nil? and Current.user.voted_up_on? comment %>
+            <%= link_to promotion_comment_unvote_path(comment_id: comment.id, promotion_id: @promotion.id), method: :put do %>
+              <i class="fa fa-sort-up fa-2x mt-3 hit-voting-done"></i>
+            <% end %>
+          <% else %>
+            <%= link_to promotion_comment_like_path(comment_id: comment.id, promotion_id: @promotion.id), method: :put do %>
+              <i class="fa fa-sort-up fa-2x mt-3 hit-voting"></i>
+            <% end %>
+          <% end %>
+          <% if !Current.user.nil? and Current.user.voted_down_on? comment %>
+            <%= link_to promotion_comment_unvote_path(comment_id: comment.id, promotion_id: @promotion.id), method: :put do %>
+              <i class="fa fa-sort-down fa-2x mt-3 hit-voting-done"></i>
+            <% end %>
+          <% else %>
+            <%= link_to promotion_comment_dislike_path(comment_id: comment.id, promotion_id: @promotion.id), method: :put do %>
+              <i class="fa fa-sort-down fa-2x mt-3 hit-voting"></i>
+            <% end %>
+          <% end %>
+          <span class="ml-2"><%= comment.weighted_score%></span>
+          <span class="dot ml-2"></span>
+          <h6 class="ml-2 mt-1">
+            <%=link_to 'Reply', new_promotion_comment_path(@promotion, parent_id: comment.id), remote: true %>
+          </h6>
+          <div id="reply-form-<%= comment.id %>"></div>
+        </div>
+      </div>
+      <% if comment.replies.any? %>
+        <% comment.replies.each do |reply| %>
+          <%= render partial: 'comments/reply', locals: {comment: reply} %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

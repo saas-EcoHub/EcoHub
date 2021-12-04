@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :promotions do
+    resources :comments do
+      put 'like', to: 'comments#upvote'
+      put 'dislike', to: 'comments#downvote'
+      put 'unvote', to: 'comments#unvote'
+    end
     member do
       put 'like', to: 'promotions#upvote'
       put 'dislike', to: 'promotions#downvote'
