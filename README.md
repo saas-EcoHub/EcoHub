@@ -2,7 +2,18 @@
 
 EcoHub is a promotion and refer code sharing website to provide Columbia students more access to valid promo and refer codes.
 
+## ILLUSTRATION
 
+This is an illustration for like and dislike feature. We don't think it problematic as likes, dislikes and unlike are 3 different operations. For example, clicking dislike on a promo with "1" like is to send it to -1 rather than 0, as it shows user's dislike about certain object, not merely undoing the previous like behavior. So the result should be -1. When user only wants to undo the previous behavior, he or she can just click the previous corresponding control. For example, click the clicked like control to make the count minus 1 or click the clicked dislike control to make the count plus 1.
+
+## TODO
+
+- rspec of register and login and the corresponding controller
+- rspec of session controller and application controller
+- rspec of comments and replies and the corresponding controller
+- cucumber of comments and replies
+- rspec of like and dislike on comments and replies and the corresponding controller
+- cucumber of like and dislike on comments and replies
 
 ## Team Members
 
@@ -38,6 +49,7 @@ EcoHub is a promotion and refer code sharing website to provide Columbia student
 - Posts promotion codes and refer codes
 - Supports likes and dislikes on promo info to sort and filter most valid/popular promotions
 - Comments on existing promotions
+- Supports likes and dislikes on comments and replies
 - User registration and log in functionalities
 
 ## Instructions
