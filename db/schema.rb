@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_04_024808) do
+ActiveRecord::Schema.define(version: 2021_12_04_222405) do
 
   create_table "comments", force: :cascade do |t|
     t.string "content"
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 2021_12_04_024808) do
     t.integer "promotion_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "cached_votes_total", default: 0
+    t.integer "cached_votes_score", default: 0
+    t.integer "cached_votes_up", default: 0
+    t.integer "cached_votes_down", default: 0
+    t.integer "cached_weighted_score", default: 0
+    t.integer "cached_weighted_total", default: 0
+    t.float "cached_weighted_average", default: 0.0
     t.index ["promotion_id"], name: "index_comments_on_promotion_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
@@ -32,6 +39,13 @@ ActiveRecord::Schema.define(version: 2021_12_04_024808) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer "user_id"
+    t.integer "cached_votes_total", default: 0
+    t.integer "cached_votes_score", default: 0
+    t.integer "cached_votes_up", default: 0
+    t.integer "cached_votes_down", default: 0
+    t.integer "cached_weighted_score", default: 0
+    t.integer "cached_weighted_total", default: 0
+    t.float "cached_weighted_average", default: 0.0
     t.index ["user_id"], name: "index_promotions_on_user_id"
   end
 
