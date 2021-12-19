@@ -4,7 +4,6 @@ FactoryGirl.define do
     source 'BuyK'
     expdate '2022-12-31'
     info 'Test Data'
-    user_id 1
     category 'Refer Code'
   end
   factory :Wee, class: 'Promotion' do
@@ -12,7 +11,6 @@ FactoryGirl.define do
     source 'Weee!'
     expdate '2022-01-01'
     info 'Test Data'
-    user_id 1
     category 'New User Only'
   end
   factory :Gorillas, class: 'Promotion' do
@@ -20,7 +18,6 @@ FactoryGirl.define do
     source 'Gorillas'
     expdate '2021-12-31'
     info 'Test Data'
-    user_id 1
     category 'Other'
   end
 end
