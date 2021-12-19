@@ -8,11 +8,7 @@ This is an illustration for like and dislike feature. We don't think it problema
 
 ## TODO
 
-- rspec of register and login and the corresponding controller
-- rspec of session controller and application controller
-- rspec of comments and replies and the corresponding controller
 - cucumber of comments and replies
-- rspec of like and dislike on comments and replies and the corresponding controller
 - cucumber of like and dislike on comments and replies
 
 ## Team Members
